@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Cook Recipe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    
+</head>
+
+<body>
+    <div class="mobile-container">
+        <header>
+            <img src="./images/logo-trans.png" alt="logo">
+            <input type="text" id="search-term">
+            <button id="search"><i class="fas fa-search"></i></button>
+        </header>
+        <div class="fav-container">
+            <h3>Favorite Meals</h3>
+            <ul class="fav-meals" id="fav-meals">
+            </ul>
+        </div>
+        <div class="filter-container">
+            <h3>Filter Meals</h3>
+            <ul class="filter-controls" id="filter-controls">
+                <li id="li-area">
+                    <img src="https://www.countryflags.io/EU/flat/64.png" alt="Area">
+                    <span>Area</span>
+                </li>
+                <li id="li-category">
+                    <img src="./images/Seafood.png" alt="Category">
+                    <span>Category</span>
+                </li>
+             </ul>
+        </div>
+        <div class="meals" id="meals"></div>
+        <div class= "control-section">
+            <button class="btn-refresh" id="btn-refresh"><i class="fas fa-sync-alt"></i></button>
+        </div>
+    </div>
+
+    <div class="popup-container hidden" id="meal-popup">
+        <div class="popup">
+            <button id="close-popup" class="close-popup">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="meal-info" id="meal-info"></div>
+        </div>
+    </div>
+
+    <div class="select-popup-container hidden" id="select-popup">
+        <div class="popup">
+            <button id="close-select-popup" class="close-popup">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="options" id="options">
+            </ul>
+        </div>
+    </div>
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
